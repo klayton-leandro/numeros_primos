@@ -1,13 +1,12 @@
-2020-04-02T23:19:06.387559+00:00 app[api]: Release v1 created by user bomizukawa@gmail.com
-2020-04-02T23:19:06.504032+00:00 app[api]: Release v2 created by user bomizukawa@gmail.com
-2020-04-02T23:19:06.387559+00:00 app[api]: Initial release by user bomizukawa@gmail.com
-2020-04-02T23:19:06.504032+00:00 app[api]: Enable Logplex by user bomizukawa@gmail.com
-2020-04-02T23:19:49.000000+00:00 app[api]: Build started by user bomizukawa@gmail.com
-2020-04-02T23:20:17.667395+00:00 app[api]: Scaled to web@1:Free by user bomizukawa@gmail.com
-2020-04-02T23:20:17.646316+00:00 app[api]: Deploy 4a81f35e by user bomizukawa@gmail.com
-2020-04-02T23:20:17.646316+00:00 app[api]: Release v3 created by user bomizukawa@gmail.com
-2020-04-02T23:20:22.786213+00:00 heroku[web.1]: State changed from starting to up
-2020-04-02T23:20:22.529769+00:00 app[web.1]: * Running on http://0.0.0.0:30986/ (Press CTRL+C to quit)
-2020-04-02T23:20:26.000000+00:00 app[api]: Build succeeded
-2020-04-02T23:20:42.651624+00:00 heroku[router]: at=info method=GET path="/" host=mighty-fortress-15719.herokuapp.com request_id=a51cc184-2a59-4691-a5d3-a19262f433d3 fwd="177.197.74.250" dyno=web.1 connect=0ms service=10ms status=200 bytes=526 protocol=https
-2020-04-02T23:20:42.650675+00:00 app[web.1]: 10.63.103.37 - - [02/Apr/2020 23:20:42] "GET / HTTP/1.1" 200 -
+ ›   Warning: heroku update available from 7.39.0 to 7.39.2.
+2020-04-04T00:15:04.658862+00:00 app[api]: Release v1 created by user klayton.paula@aluno.faculdadeimpacta.com.br
+2020-04-04T00:15:04.790130+00:00 app[api]: Enable Logplex by user klayton.paula@aluno.faculdadeimpacta.com.br
+2020-04-04T00:15:04.790130+00:00 app[api]: Release v2 created by user klayton.paula@aluno.faculdadeimpacta.com.br
+2020-04-04T00:15:04.658862+00:00 app[api]: Initial release by user klayton.paula@aluno.faculdadeimpacta.com.br
+2020-04-04T00:22:03.000000+00:00 app[api]: Build started by user klayton.paula@aluno.faculdadeimpacta.com.br
+2020-04-04T00:22:29.964447+00:00 app[api]: Deploy c5ab835e by user klayton.paula@aluno.faculdadeimpacta.com.br
+2020-04-04T00:22:29.983344+00:00 app[api]: Scaled to web@1:Free by user klayton.paula@aluno.faculdadeimpacta.com.br
+2020-04-04T00:22:29.964447+00:00 app[api]: Release v3 created by user klayton.paula@aluno.faculdadeimpacta.com.br
+2020-04-04T00:22:38.300179+00:00 app[web.1]: * Running on http://0.0.0.0:44841/ (Press CTRL+C to quit)
+2020-04-04T00:22:40.033004+00:00 heroku[web.1]: State changed from starting to up
+2020-04-04T00:22:38.000000+00:00 app[api]: Build succeeded

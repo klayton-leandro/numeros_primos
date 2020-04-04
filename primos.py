@@ -18,7 +18,7 @@ def functionRandom():
             count += 1
         elif count == 100:
             break
-    return primos
+    return numeros_primos
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
