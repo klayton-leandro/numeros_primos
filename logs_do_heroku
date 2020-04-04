@@ -1,4 +1,4 @@
- ›   Warning: heroku update available from 7.39.0 to 7.39.2.
+Warning: heroku update available from 7.39.0 to 7.39.2.
 2020-04-04T00:15:04.658862+00:00 app[api]: Release v1 created by user klayton.paula@aluno.faculdadeimpacta.com.br
 2020-04-04T00:15:04.790130+00:00 app[api]: Enable Logplex by user klayton.paula@aluno.faculdadeimpacta.com.br
 2020-04-04T00:15:04.790130+00:00 app[api]: Release v2 created by user klayton.paula@aluno.faculdadeimpacta.com.br
@@ -10,3 +10,54 @@
 2020-04-04T00:22:38.300179+00:00 app[web.1]: * Running on http://0.0.0.0:44841/ (Press CTRL+C to quit)
 2020-04-04T00:22:40.033004+00:00 heroku[web.1]: State changed from starting to up
 2020-04-04T00:22:38.000000+00:00 app[api]: Build succeeded
+2020-04-04T00:23:18.647655+00:00 heroku[router]: at=info method=GET path="/" host=numeros-primos.herokuapp.com request_id=8d81acbc-acd6-45f0-834d-8c429e9b672c fwd="143.0.58.72" dyno=web.1 connect=1ms service=6ms status=500 bytes=450 protocol=https
+2020-04-04T00:23:18.646545+00:00 app[web.1]: [2020-04-04 00:23:18,644] ERROR in app: Exception on / [GET]
+2020-04-04T00:23:18.646572+00:00 app[web.1]: Traceback (most recent call last):
+2020-04-04T00:23:18.646573+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/flask/app.py", line 1982, in wsgi_app
+2020-04-04T00:23:18.646573+00:00 app[web.1]: response = self.full_dispatch_request()
+2020-04-04T00:23:18.646574+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/flask/app.py", line 1614, in full_dispatch_request
+2020-04-04T00:23:18.646575+00:00 app[web.1]: rv = self.handle_user_exception(e)
+2020-04-04T00:23:18.646575+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/flask/app.py", line 1517, in handle_user_exception
+2020-04-04T00:23:18.646575+00:00 app[web.1]: reraise(exc_type, exc_value, tb)
+2020-04-04T00:23:18.646576+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/flask/_compat.py", line 33, in reraise
+2020-04-04T00:23:18.646577+00:00 app[web.1]: raise value
+2020-04-04T00:23:18.646577+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/flask/app.py", line 1612, in full_dispatch_request
+2020-04-04T00:23:18.646577+00:00 app[web.1]: rv = self.dispatch_request()
+2020-04-04T00:23:18.646578+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.7/site-packages/flask/app.py", line 1598, in dispatch_request
+2020-04-04T00:23:18.646578+00:00 app[web.1]: return self.view_functions[rule.endpoint](**req.view_args)
+2020-04-04T00:23:18.646578+00:00 app[web.1]: File "primos.py", line 21, in functionRandom
+2020-04-04T00:23:18.646579+00:00 app[web.1]: return primos
+2020-04-04T00:23:18.646580+00:00 app[web.1]: NameError: name 'primos' is not defined
+2020-04-04T00:23:18.646997+00:00 app[web.1]: 10.168.89.215 - - [04/Apr/2020 00:23:18] "GET / HTTP/1.1" 500 -
+2020-04-04T00:23:18.864867+00:00 app[web.1]: 10.168.89.215 - - [04/Apr/2020 00:23:18] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-04T00:23:18.869442+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=numeros-primos.herokuapp.com request_id=9b2da67c-f8a8-4bed-8637-a69e2bd6f585 fwd="143.0.58.72" dyno=web.1 connect=1ms service=23ms status=404 bytes=380 protocol=https
+2020-04-04T00:24:11.000000+00:00 app[api]: Build started by user klayton.paula@aluno.faculdadeimpacta.com.br
+2020-04-04T00:24:40.087392+00:00 heroku[web.1]: Restarting
+2020-04-04T00:24:40.104221+00:00 heroku[web.1]: State changed from up to starting
+2020-04-04T00:24:39.904394+00:00 app[api]: Deploy 6325ec19 by user klayton.paula@aluno.faculdadeimpacta.com.br
+2020-04-04T00:24:39.904394+00:00 app[api]: Release v4 created by user klayton.paula@aluno.faculdadeimpacta.com.br
+2020-04-04T00:24:44.591084+00:00 app[web.1]: * Running on http://0.0.0.0:30563/ (Press CTRL+C to quit)
+2020-04-04T00:24:45.141651+00:00 heroku[web.1]: State changed from starting to up
+2020-04-04T00:24:48.000000+00:00 app[api]: Build succeeded
+2020-04-04T00:25:03.417394+00:00 heroku[router]: at=info method=GET path="/" host=numeros-primos.herokuapp.com request_id=343ede9f-7891-4495-aaa8-3a685583f35c fwd="143.0.58.72" dyno=web.1 connect=0ms service=2ms status=200 bytes=153 protocol=https
+2020-04-04T00:25:03.415857+00:00 app[web.1]: 10.30.119.250 - - [04/Apr/2020 00:25:03] "GET / HTTP/1.1" 200 -
+2020-04-04T00:25:03.634206+00:00 app[web.1]: 10.30.119.250 - - [04/Apr/2020 00:25:03] "GET /favicon.ico HTTP/1.1" 404 -
+2020-04-04T00:25:03.636036+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=numeros-primos.herokuapp.com request_id=10d4729b-7eb1-4f23-b9fa-5dfbb06cfda1 fwd="143.0.58.72" dyno=web.1 connect=3ms service=10ms status=404 bytes=380 protocol=https
+2020-04-04T00:25:51.811484+00:00 heroku[router]: at=info method=GET path="/" host=numeros-primos.herokuapp.com request_id=9fcdf470-1b06-4b2e-a823-73b3632160b2 fwd="143.0.58.72" dyno=web.1 connect=1ms service=4ms status=200 bytes=153 protocol=https
+2020-04-04T00:25:51.810421+00:00 app[web.1]: 10.158.213.109 - - [04/Apr/2020 00:25:51] "GET / HTTP/1.1" 200 -
+2020-04-04T00:25:53.360843+00:00 heroku[router]: at=info method=GET path="/" host=numeros-primos.herokuapp.com request_id=4e9bd106-a66d-41e1-b4b7-872cd8ee5f9d fwd="143.0.58.72" dyno=web.1 connect=0ms service=2ms status=200 bytes=153 protocol=https
+2020-04-04T00:25:53.360519+00:00 app[web.1]: 10.158.213.109 - - [04/Apr/2020 00:25:53] "GET / HTTP/1.1" 200 -
+2020-04-04T00:25:54.378818+00:00 heroku[router]: at=info method=GET path="/" host=numeros-primos.herokuapp.com request_id=b758bb10-e77e-484a-abfe-29994cd26b7c fwd="143.0.58.72" dyno=web.1 connect=0ms service=2ms status=200 bytes=153 protocol=https
+2020-04-04T00:25:54.377125+00:00 app[web.1]: 10.158.213.109 - - [04/Apr/2020 00:25:54] "GET / HTTP/1.1" 200 -
+2020-04-04T00:25:54.882502+00:00 heroku[router]: at=info method=GET path="/" host=numeros-primos.herokuapp.com request_id=d4110edf-2162-44ec-9de8-c3130fe54459 fwd="143.0.58.72" dyno=web.1 connect=0ms service=3ms status=200 bytes=153 protocol=https
+2020-04-04T00:25:54.882042+00:00 app[web.1]: 10.158.213.109 - - [04/Apr/2020 00:25:54] "GET / HTTP/1.1" 200 -
+2020-04-04T00:25:55.385395+00:00 heroku[router]: at=info method=GET path="/" host=numeros-primos.herokuapp.com request_id=0195386c-6983-4b84-8e34-d59e20031506 fwd="143.0.58.72" dyno=web.1 connect=0ms service=3ms status=200 bytes=153 protocol=https
+2020-04-04T00:25:55.385406+00:00 app[web.1]: 10.37.207.144 - - [04/Apr/2020 00:25:55] "GET / HTTP/1.1" 200 -
+2020-04-04T00:25:55.622656+00:00 app[web.1]: 10.37.207.144 - - [04/Apr/2020 00:25:55] "GET / HTTP/1.1" 200 -
+2020-04-04T00:25:55.622587+00:00 heroku[router]: at=info method=GET path="/" host=numeros-primos.herokuapp.com request_id=1f1fd3f1-0a30-4ba4-b6ce-4aa1ad030fb1 fwd="143.0.58.72" dyno=web.1 connect=0ms service=2ms status=200 bytes=153 protocol=https
+2020-04-04T00:25:56.115838+00:00 heroku[router]: at=info method=GET path="/" host=numeros-primos.herokuapp.com request_id=102d3e61-0cd9-4765-b30c-335932c74622 fwd="143.0.58.72" dyno=web.1 connect=0ms service=2ms status=200 bytes=153 protocol=https
+2020-04-04T00:25:56.115543+00:00 app[web.1]: 10.37.207.144 - - [04/Apr/2020 00:25:56] "GET / HTTP/1.1" 200 -
+2020-04-04T00:25:56.813064+00:00 heroku[router]: at=info method=GET path="/" host=numeros-primos.herokuapp.com request_id=db925d7f-7f64-4eef-a6b4-c55fe901242f fwd="143.0.58.72" dyno=web.1 connect=1ms service=3ms status=200 bytes=153 protocol=https
+2020-04-04T00:25:56.811340+00:00 app[web.1]: 10.41.153.135 - - [04/Apr/2020 00:25:56] "GET / HTTP/1.1" 200 -
+2020-04-04T00:25:57.245610+00:00 heroku[router]: at=info method=GET path="/" host=numeros-primos.herokuapp.com request_id=7056d386-7a8d-45bb-ab90-5e502338dc78 fwd="143.0.58.72" dyno=web.1 connect=1ms service=2ms status=200 bytes=153 protocol=https
+2020-04-04T00:25:57.244909+00:00 app[web.1]: 10.29.126.3 - - [04/Apr/2020 00:25:57] "GET / HTTP/1.1" 200
